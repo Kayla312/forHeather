@@ -27,7 +27,9 @@ h6 {
 
 .white,
 a > i.fa,
-a {
+a,
+a:hover,
+a:focus {
   color: white;
 }
 .navbar-brand,
