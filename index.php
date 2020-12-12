@@ -1,2 +1,2 @@
-Method to use Heroku on Single Page Site
+<!-- Method to use Heroku on Single Page Site -->
 <?php header( 'Location: /index.html' ) ;  ?>
