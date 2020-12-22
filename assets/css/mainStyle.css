@@ -72,6 +72,12 @@ a:focus {
   font-size: 20px;
 }
 
+.reviews,
+.reviews > div.card > div.card-body {
+  background-color: #ffe6e8;
+  color: #355e3b;
+}
+
 @media screen and (max-width: 600px) {
   .parallaxTwo{
     height: 700px;
