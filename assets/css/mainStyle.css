@@ -1,5 +1,6 @@
 html {
   background-size: cover;
+  font-size: 30px;
   /* font-family: 'Playfair Display', serif; */
 }
 /* body {
@@ -10,10 +11,13 @@ body,
 .index-main,
 .card-body,
 .card {
-  background-color: #355e3b;
+  /* background-color: #355e3b; */
+  background-color: white;
   border: none;
-  color:white;
-  font-family: 'Nanum Gothic', sans-serif;
+  /* color:white; */
+  color: #355e3b;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Yanone Kaffeesatz','Arial-Narrow', sans-serif;
 }
 
 h1,
@@ -23,6 +27,7 @@ h4,
 h5,
 h6 {
   font-family: 'Playfair Display', serif;
+  /* font-family: 'Work Sans', sans-serif; */
 }
 
 .white,
@@ -30,11 +35,18 @@ a > i.fa,
 a,
 a:hover,
 a:focus {
+  /* color: white; */
+  color: #355e3b;
+}
+
+a > i.fa,
+.white {
   color: white;
 }
 .navbar-brand,
 .nav-item {
-  color: white !important;
+  /* color: white !important; */
+  color: #355e3b !important;
 }
 
 .card-img-top{
@@ -42,8 +54,12 @@ a:focus {
   height: 60%;
 }
 
+.p-and-p-logo {
+  width: 18rem;
+}
+
 .parallaxOne{
-  background: linear-gradient( rgba(20,20,20, .5),  rgba(20,20,20, .7)),url(../images/squash.jpeg);
+  background: linear-gradient( rgba(20,20,20, .5),  rgba(20,20,20, .7)),url(../images/squash.jpg);
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
@@ -55,7 +71,7 @@ a:focus {
 .parallaxTwo{
   background: linear-gradient( rgba(20,20,20, .7),  rgba(20,20,20, .7)),url(../images/beet_poke.jpeg);
   /* Set a specific height */
-  height: 500px;
+  height: 26rem;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -63,23 +79,53 @@ a:focus {
   background-size: cover;
 }
 .indexPageHeader{
-  margin-top: 17vh;
+  margin-top: 10vh;
 }
 
 .services-details > p,
 .about-me {
-  color: white;
-  font-size: 20px;
+  /* color: white; */
+  color: #355e3b;
+  font-size: 35px;
+}
+
+.services-details{
+  background-color: #ffe6e8;
 }
 
 .reviews,
 .reviews > div.card > div.card-body {
-  background-color: #ffe6e8;
+  /* background-color: #ffe6e8; */
   color: #355e3b;
 }
-
-@media screen and (max-width: 600px) {
+.sample_menu_section > .card-deck .card {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+@media screen and (max-width: 1180px) {
   .parallaxTwo{
-    height: 700px;
+    height: 28rem;
   }
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 20px;
+  }
+  .parallaxTwo{
+    /* height: 1095px; */
+    /* height: 115vh; */
+    height: 160vh;
+  }
+
+  .indexPageHeader{
+    margin-top: 2vh;
+  }
+
+  .p-and-p-logo {
+    width: 100%;
+  }
+  /* .card-text > li {
+    font-size: .75rem;
+  } */
 }

@@ -8,8 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/mainStyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,900;1,700;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,900;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="assets/images/logo.png">
 
@@ -17,32 +19,36 @@
   </head>
   <body>
       <section>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark"> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- <div class="inline-block"> -->
             <a class="navbar-brand mt-sm-3 mt-lg-0" href="./index.html" style="font-family: 'Playfair Display', serif">Pints and Pans</a>
-            <button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <!-- </div> -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav text-white">
+              <!-- <div class="navbar-nav text-white"> -->
+              <div class="navbar-nav">
                 <a class="nav-item nav-link" href="./index.html">Home</a>
-                <a class="nav-item nav-link" href="./services.html">Services</a>
+                <!-- <a class="nav-item nav-link" href="./services.html">Services</a> -->
                 <a class="nav-item nav-link" href="./contact.html">Contact</a>
                 <a class="nav-item nav-link" href="./about.html">About</a>
               </div>
             </div>
-          </nav>
+        </nav>
       </section>
       <section>
       <div class="jumbotron parallaxOne">
         <div class="container">
-          <h1 class="indexPageHeader text-center white">Curated Meals Made From Scratch In Your Home</h1>
+          <h1 class="indexPageHeader text-center white">Curated Meals Made From Scratch On Your Table</h1>
         </div>
       </div>
       </section>
       <section class="container">
           <div class="card  border-0 text-center">
             <div class="card-body">
-              <img class="card-img-top" src="./assets/images/white_logo.png" style="width: 18rem;" alt="Pint and Pans Logo"> 
+              <img class="card-img-top p-and-p-logo" src="./assets/images/logo.png"  alt="Pint and Pans Logo"> 
               <br>
               <br>
               <h2 class="card-title">What is a Personal Chef?</h2>
@@ -54,15 +60,18 @@
       </section>
       <br>
       <br>
-      <section class="container mb-5 pb-5">
+      <!-- <section class="container mb-5 pb-5"> -->
+      <section class="sample_menu_section">
         <h2 class="text-center">Sample Menu Options</h2>
         <div class="card-deck">
+        <!-- <div class="card-group"> -->
             <div class="card">
               <!-- <img class="card-img-top" src="./assets/images/pecan_bowl.jpeg" alt="Card image cap"> -->
-              <img class="img-fluid" src="./assets/images/pecan_bowl.jpeg" alt="Card image cap">
+              <img class="img-fluid" src="./assets/images/sweet_potato_bowl.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3 class="card-title text-center">Lunch Prep</h3>
                 <p class="card-text">
+                  <ul>
                     <li>Beet “Poke” Bowls</li>
                     <br>
                     <li>Red Curry Noodle Bowl</li>
@@ -70,12 +79,13 @@
                     <li>Kale Chickpea Caesar Salad</li>
                     <br>
                     <li>Butternut Squash Apple Soup</li> 
+                  </ul>
                 </p>
               </div>
             </div>
             <div class="card">
               <!-- <img class="card-img-top" src="./assets/images/risotto.jpeg" alt="Card image cap"> -->
-              <img class="img-fluid" src="./assets/images/risotto.jpeg" alt="Card image cap">
+              <img class="img-fluid" src="./assets/images/cauliflower_soup_new.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3 class="card-title text-center">Dinners</h3>
                 <p class="card-text">
@@ -91,7 +101,7 @@
               </div>
             </div>
             <div class="card">
-              <img class="img-fluid" src="./assets/images/tabbouleh.jpeg" alt="Card image cap">
+              <img class="img-fluid" src="./assets/images/balsalmic_tofu.jpg" alt="Card image cap">
               <!-- img class="card-img-top" src="./assets/images/tabbouleh.jpeg" alt="Card image cap"> -->
               <div class="card-body">
                 <h3 class="card-title text-center">Add-On Options</h3>
@@ -105,13 +115,28 @@
               </div>
             </div>
           </div>
+      </section>
+      <section class="services-details">
+        <div class="container py-2">
+          <p class="card-text my-5 text-center">
+              All new clients will have a personal consultation to discuss dietary restrictions, preferences, and lifestyles. Prices can vary depending on agreed upon menu plan.
+          </p>
+          <p class="card-text my-5 text-center">
+              Minimum service charge -- $300 + groceries/tax
+          </p>
+          <p class="card-text my-5 text-center">
+              Please contact for specific rates and plans.
+          </p>
+        </div>
+      </section>
+      <section>
           <div class="container reviews py-5">
             <div class="card">
               <div class="card-body">
-                <h4 class="text-center mb-4">Review</h4>
+                <h4 class="text-center mb-4">Client Reviews</h4>
                 <br>
                 <p>
-                  My name is Win. I live in Minneapolis with my wife (Alex) and son (Odin). Our family has worked Pints & Pans for over a year, translating to several hundred unique meals consumed. With this sample size, I can definitely say Chef Heather is world class. An absolute star in an otherwise crowded/confusing market. We are sad to see her leave Minneapolis, and wish nothing but success in Seattle! 
+                  My name is Win. I live in Minneapolis with my wife (Alex) and son (Odin). Our family has worked with Pints & Pans for over a year, translating to several hundred unique meals consumed. With this sample size, I can definitely say Chef Heather is world class. An absolute star in an otherwise crowded/confusing market. We are sad to see her leave Minneapolis, and wish nothing but success in Seattle! 
                 </p>
                 <p>
                   <u class="font-weight-bold">1. Outstanding Combination of Professionalism + Kindness: </u> Chef Heather cooked in our home, as well as off-site. In all interactions, without exception, she was a top-notch professional. Always on-time, efficient, clean, respectful, and easy to work with. More importantly, Chef Heather is wonderfully kind. We always enjoyed her energy in our home, she is a true delight.
@@ -148,7 +173,7 @@
                     Saturday and Sunday by request
                   </p>
                   <a class="col ml-xl-0 pl-xl-0" href="https://www.facebook.com/Pints-and-Pans-LLC-108253207639066" target="_blank"><i class="fa fa-lg fa-facebook"> Facebook</i></a>
-                  <a class="col" href="https://www.instagram.com/pintsandpans/" target="_blank"><i class="fa fa-lg fa-instagram"> Instagram</i></a>
+                  <a class="col pl-0" href="https://www.instagram.com/pintsandpans/" target="_blank"><i class="fa fa-lg fa-instagram"> Instagram</i></a>
                 </div>
                 <div class="col-lg-4 col-12 text-white">
                   <h3><u>Contact</u></h3>
@@ -161,13 +186,13 @@
                 </div>
                 <div class="col-lg-4 col-12">
                   <!-- <img class="footerLogo white" src="./assets/images/white_logo.png" style="width: 12rem;" alt="Pint and Pans Logo">  -->
-                  <img class= "col-4 px-0" src="./assets/images/white_logo.png"  alt="Pint and Pans Logo"> 
+                  <img class= "col-4 px-4 px-lg-0" src="./assets/images/white_logo.png"  alt="Pint and Pans Logo"> 
                   <a  href="https://uspca.memberclicks.net" target="_blank"><img class= "col-3 px-0" src="https://uspca.memberclicks.net/assets/images/USPCAMember.png " alt="Member United States Personal Chef Association"></a>
                   <a  href="https://uspca.memberclicks.net/code-of-ethics" target="_blank"><img class= "col-3 px-0" src="https://uspca.memberclicks.net/assets/images/code-of-ethics.png" alt="USPCA Code of Ethics"></a>
                 </div>
               </div>
             </div>
-            <h5 class="text-center text-white mt-5">&copy;Pints and Pans LLC, 2020</h5>
+            <h5 class="text-center mt-4">&copy;Pints and Pans LLC, 2021</h5>
           </footer>
           <!-- <a href="https://uspca.memberclicks.net" target="_blank"><img src="https://uspca.memberclicks.net/assets/images/USPCAMember.png " alt="Member United States Personal Chef Association" width="136" height="140"></a>
           <a href="https://uspca.memberclicks.net/code-of-ethics" target="_blank"><img src="https://uspca.memberclicks.net/assets/images/code-of-ethics.png" alt="USPCA Code of Ethics" width="100" height="100"></a> -->
