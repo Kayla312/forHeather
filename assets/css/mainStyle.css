@@ -39,7 +39,7 @@ a:focus {
   color: #355e3b;
 }
 
-a > i.fa,
+/* a > i.fa, */
 .white {
   color: white;
 }
@@ -71,7 +71,7 @@ a > i.fa,
 .parallaxTwo{
   background: linear-gradient( rgba(20,20,20, .7),  rgba(20,20,20, .7)),url(../images/beet_poke.jpeg);
   /* Set a specific height */
-  height: 26rem;
+  height: 23rem;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -115,7 +115,7 @@ a > i.fa,
   .parallaxTwo{
     /* height: 1095px; */
     /* height: 115vh; */
-    height: 160vh;
+    height: 127vh;
   }
 
   .indexPageHeader{
