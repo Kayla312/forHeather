@@ -3,10 +3,7 @@ html {
   font-size: 30px;
   /* font-family: 'Playfair Display', serif; */
 }
-/* body {
-  background-color: #355e3b;
-  font-family: 'Nanum Gothic', sans-serif;
-} */
+
 body,
 .index-main,
 .card-body,
@@ -35,11 +32,9 @@ a > i.fa,
 a,
 a:hover,
 a:focus {
-  /* color: white; */
   color: #355e3b;
 }
 
-/* a > i.fa, */
 .white {
   color: white;
 }
@@ -56,6 +51,10 @@ a:focus {
 
 .p-and-p-logo {
   width: 18rem;
+}
+.p-and-p-logo-about {
+  display: block;
+  width: 50%;
 }
 
 .parallaxOne{
@@ -84,7 +83,6 @@ a:focus {
 
 .services-details > p,
 .about-me {
-  /* color: white; */
   color: #355e3b;
   font-size: 35px;
 }
@@ -102,6 +100,45 @@ a:focus {
   margin-left: 4px;
   margin-right: 4px;
 }
+/* for card image wall */
+.card {
+border: none;
+}
+img,
+.card-img-top {
+border-radius: 0em;
+}
+@media (min-width: 576px) {
+.card-columns {
+column-count: 2;
+}
+}
+@media (min-width: 768px) {
+.card-columns {
+column-count: 3;
+}
+}
+@media (min-width: 992px) {
+.card-columns {
+column-count: 4;
+}
+}
+/* end card image wall */
+
+ul.no-bullets {
+  list-style-type: none;
+  line-height: 2;
+}
+.survey{
+  border: 2px white solid !important;
+} 
+.survey,
+.survey > a {
+  color: white !important;
+  background-color: #355e3b;
+  
+}
+
 @media screen and (max-width: 1180px) {
   .parallaxTwo{
     height: 28rem;
@@ -113,8 +150,6 @@ a:focus {
     font-size: 20px;
   }
   .parallaxTwo{
-    /* height: 1095px; */
-    /* height: 115vh; */
     height: 127vh;
   }
 
@@ -125,7 +160,4 @@ a:focus {
   .p-and-p-logo {
     width: 100%;
   }
-  /* .card-text > li {
-    font-size: .75rem;
-  } */
 }
